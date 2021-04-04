@@ -1,13 +1,13 @@
 {
-  "name": "markdown-open-as-preview-only",
-  "displayName": "Markdown open as preview only",
+  "name": "markdown-open-as-preview",
+  "displayName": "Markdown open as preview",
   "description": "Whenever a Markdown file is opened, show the preview instead of the editor.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "saiho",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/saiho/markdown-open-as-preview-only"
+    "url": "https://github.com/saiho/markdown-open-as-preview"
   },
   "icon": "images/icon.png",
   "engines": {

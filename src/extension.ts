@@ -14,23 +14,8 @@ export function activate(context: vscode.ExtensionContext) {
 export function deactivate() { }
 
 function openMarkdowPreview(doc: vscode.TextDocument | undefined) {
+    // Doc is markdown, and has not been modified, and is not an special view (GIT comparison, difference...)
     if (doc && doc.languageId === "markdown" && !doc.isDirty && !doc.isUntitled && doc.uri.scheme !== "git" && doc.uri.scheme !== "vscode" && doc.uri.scheme !== "output") {
-        vscode.commands.executeCommand("markdown.showPreview").then(() => {
-            if (vscode.window.activeTextEditor) {
-                // Be sure the preview finishes loading
-                vscode.window.showTextDocument(vscode.window.activeTextEditor.document, { preview: false }).then(() => {
-                    // Activate now the editor in order to close it
-                    vscode.commands.executeCommand("markdown.showSource").then(() => {
-                        if (vscode.window.activeTextEditor) {
-                            // Be sure the preview finishes loading
-                            vscode.window.showTextDocument(vscode.window.activeTextEditor.document, { preview: false }).then(() => {
-                                // Close the editor
-                                vscode.commands.executeCommand("workbench.action.closeActiveEditor");
-                            });
-                        }
-                    });
-                });
-            }
-        });
+        vscode.commands.executeCommand("markdown.showPreview");
     }
 }

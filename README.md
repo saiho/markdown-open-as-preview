@@ -1,6 +1,6 @@
-# **Markdown open as preview only** extension for Visual Studio Code
+# **Markdown open as preview** extension for Visual Studio Code
 
-This is a very simple extension. If enabled, whenever a Markdown file is opened you will initially see the preview instead of the editor.
+This is a very simple extension. If enabled, whenever a Markdown file is opened you will initially see the preview.
 
 ## Release Notes
 
@@ -11,3 +11,7 @@ Initial release.
 ### 0.0.3
 
 Fixes.
+
+### 0.0.4
+
+Do not close source automatically.
