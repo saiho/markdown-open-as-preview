@@ -4,6 +4,6 @@ This is a very simple extension. If enabled, whenever a Markdown file is opened 
 
 ## Release Notes
 
-### 0.0.1
+### 0.0.2
 
 Initial release.
