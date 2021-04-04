@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 export function deactivate() {}
 
 function openMarkdowPreview(doc: vscode.TextDocument | undefined) {
-    if (doc && doc.languageId === "markdown") {
+    if (doc && doc.languageId === "markdown" && !doc.isDirty && !doc.isUntitled) {
         vscode.commands.executeCommand("markdown.showPreview").then(() => {
             vscode.window.showTextDocument(doc).then(() => {
                 vscode.commands.executeCommand("workbench.action.closeActiveEditor");

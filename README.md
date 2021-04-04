@@ -7,3 +7,7 @@ This is a very simple extension. If enabled, whenever a Markdown file is opened 
 ### 0.0.2
 
 Initial release.
+
+### 0.0.3
+
+Fixes.

@@ -2,7 +2,7 @@
   "name": "markdown-open-as-preview-only",
   "displayName": "Markdown open as preview only",
   "description": "Whenever a Markdown file is opened, show the preview instead of the editor.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "saiho",
   "license": "MIT",
   "repository": {
